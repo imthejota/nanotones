@@ -1,0 +1,7 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App-specific overrides can go here, but mostly we use component CSS */
