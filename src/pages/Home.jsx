@@ -44,7 +44,7 @@ const Home = () => {
                         <p>Step-by-step presets to replicate iconic guitar sounds from legendary artists directly on your Nano Cortex.</p>
                     </Card>
                 </Link>
-                <a href="https://www.patreon.com/cw/BeardGuitar" target="_blank" rel="noopener noreferrer" className="support-link-card">
+                <a href="https://www.patreon.com/cw/BeardGuitar/membership" target="_blank" rel="noopener noreferrer" className="support-link-card">
                     <Card className="feature-card support-card">
                         <div className="feature-icon icon-orange"></div>
                         <h3>Support the Project</h3>

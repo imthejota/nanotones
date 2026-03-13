@@ -178,21 +178,81 @@
 .support-link-card {
     text-decoration: none;
     display: block;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .support-card {
-    border: 1px solid rgba(255, 66, 77, 0.2);
-    background: linear-gradient(145deg, rgba(25, 25, 30, 0.6), rgba(255, 66, 77, 0.05));
-    transition: all var(--transition-normal);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 15, 20, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
-.support-card:hover {
-    border-color: rgba(255, 66, 77, 0.4);
-    box-shadow: 0 8px 32px rgba(255, 66, 77, 0.1);
-    transform: translateY(-4px);
+.support-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 66, 77, 0.1), transparent 60%);
+    z-index: -1;
+    transition: opacity 0.4s ease;
+}
+
+.support-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, rgba(255, 66, 77, 0.3), transparent 30%);
+    z-index: -2;
+    animation: rotate 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.support-link-card:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.support-link-card:hover .support-card {
+    border-color: rgba(255, 66, 77, 0.3);
+    box-shadow: 0 15px 35px rgba(255, 66, 77, 0.15),
+        0 0 20px rgba(255, 66, 77, 0.1) inset;
+}
+
+.support-link-card:hover .support-card::after {
+    opacity: 1;
 }
 
 .icon-orange {
-    background: linear-gradient(135deg, #FF424D, #ff8a00);
-    box-shadow: 0 0 20px rgba(255, 66, 77, 0.4);
+    background: linear-gradient(135deg, #FF424D 0%, #ff8a00 100%);
+    box-shadow: 0 5px 20px rgba(255, 66, 77, 0.4);
+    position: relative;
+}
+
+.icon-orange::after {
+    content: '★';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
