@@ -8,7 +8,7 @@ export const famousTones = [
         settings: {
             capture: "c4", ir: "ir1",
             knobs: { gain: 7.5, bass: 6, mid: 7, treble: 5, amount: 8, level: 6 },
-            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 20, tone: 60, level: 80 }, delay: { engaged: true, name: "Digital Delay", time: 45, feedback: 30, mix: 20 }, reverb: { engaged: true, name: "Plate Reverb", decay: 40, mix: 25 } }
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 20, tone: 60, level: 80 }, delay: { engaged: true, name: "Digital Delay", time: 45, feedback: 30, mix: 20 }, reverb: { engaged: true, name: "Hall", decay: 40, mix: 25 } }
         }
     },
     {
@@ -44,7 +44,7 @@ export const famousTones = [
         settings: {
             capture: "c16", ir: "ir1",
             knobs: { gain: 7, bass: 5.5, mid: 6, treble: 7.5, amount: 8, level: 6 },
-            effects: { gate: { engaged: true, name: "Adaptive Gate" }, delay: { engaged: true, name: "Tape Delay", time: 35, feedback: 30, mix: 20 }, reverb: { engaged: true, name: "Plate Reverb", decay: 35, mix: 20 } }
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, delay: { engaged: true, name: "Tape Delay", time: 35, feedback: 30, mix: 20 }, reverb: { engaged: true, name: "Hall", decay: 35, mix: 20 } }
         }
     },
     {
@@ -62,7 +62,7 @@ export const famousTones = [
         settings: {
             capture: "c19", ir: "ir1",
             knobs: { gain: 4, bass: 6, mid: 6.5, treble: 7, amount: 4, level: 7 },
-            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 50, level: 50 }, chorus: { engaged: true, name: "Chief CE2W", depth: 60, rate: 20 }, delay: { engaged: true, name: "Analog Delay", time: 40, feedback: 35, mix: 30 }, reverb: { engaged: true, name: "Spring Reverb", decay: 45, mix: 25 } }
+            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 50, level: 50 }, chorus: { engaged: true, name: "Chief CE2W", depth: 60, rate: 20 }, delay: { engaged: true, name: "Analog Delay", time: 40, feedback: 35, mix: 30 }, reverb: { engaged: true, name: "Room", decay: 45, mix: 25 } }
         }
     },
     {
@@ -71,7 +71,7 @@ export const famousTones = [
         settings: {
             capture: "c5", ir: "ir1",
             knobs: { gain: 3.5, bass: 5, mid: 6, treble: 7, amount: 3, level: 8 },
-            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 40, level: 45 }, chorus: { engaged: true, name: "Chief CE2W", depth: 40, rate: 35 }, reverb: { engaged: true, name: "Spring Reverb", decay: 35, mix: 20 } }
+            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 40, level: 45 }, chorus: { engaged: true, name: "Chief CE2W", depth: 40, rate: 35 }, reverb: { engaged: true, name: "Room", decay: 35, mix: 20 } }
         }
     },
     {
@@ -80,7 +80,7 @@ export const famousTones = [
         settings: {
             capture: "c17", ir: "ir4",
             knobs: { gain: 6.5, bass: 5, mid: 7, treble: 7.5, amount: 6, level: 7 },
-            effects: { overdrive: { engaged: true, name: "Obsessive Drive", drive: 60, tone: 75, level: 50 }, reverb: { engaged: true, name: "Spring Reverb", decay: 25, mix: 15 } }
+            effects: { overdrive: { engaged: true, name: "Obsessive Drive", drive: 60, tone: 75, level: 50 }, reverb: { engaged: true, name: "Room", decay: 25, mix: 15 } }
         }
     },
     {
@@ -98,7 +98,7 @@ export const famousTones = [
         settings: {
             capture: "c18", ir: "ir2",
             knobs: { gain: 4, bass: 6, mid: 8, treble: 7, amount: 5, level: 6 },
-            effects: { overdrive: { engaged: true, name: "Green 808", drive: 45, tone: 60, level: 70 }, reverb: { engaged: true, name: "Spring Reverb", decay: 35, mix: 20 } }
+            effects: { overdrive: { engaged: true, name: "Green 808", drive: 45, tone: 60, level: 70 }, reverb: { engaged: true, name: "Room", decay: 35, mix: 20 } }
         }
     },
     {
@@ -107,7 +107,7 @@ export const famousTones = [
         settings: {
             capture: "c18", ir: "ir2",
             knobs: { gain: 5, bass: 5, mid: 6, treble: 7, amount: 3, level: 7 },
-            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 35, level: 45 }, reverb: { engaged: true, name: "Spring Reverb", decay: 30, mix: 25 } }
+            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 35, level: 45 }, reverb: { engaged: true, name: "Room", decay: 30, mix: 25 } }
         }
     },
     {
@@ -116,7 +116,7 @@ export const famousTones = [
         settings: {
             capture: "c1", ir: "ir3",
             knobs: { gain: 7.5, bass: 6, mid: 7, treble: 6, amount: 8, level: 7 },
-            effects: { gate: { engaged: true, name: "Adaptive Gate" }, reverb: { engaged: true, name: "Plate Reverb", decay: 25, mix: 15 } }
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, reverb: { engaged: true, name: "Hall", decay: 25, mix: 15 } }
         }
     },
     {
@@ -125,7 +125,7 @@ export const famousTones = [
         settings: {
             capture: "c11", ir: "ir3",
             knobs: { gain: 7, bass: 5, mid: 6.5, treble: 6, amount: 7, level: 6 },
-            effects: { gate: { engaged: true, name: "Adaptive Gate" }, chorus: { engaged: true, name: "Dream Chorus", depth: 50, rate: 25 }, delay: { engaged: true, name: "Tape Delay", time: 45, feedback: 30, mix: 30 }, reverb: { engaged: true, name: "Plate Reverb", decay: 45, mix: 25 } }
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, chorus: { engaged: true, name: "Dream Chorus", depth: 50, rate: 25 }, delay: { engaged: true, name: "Tape Delay", time: 45, feedback: 30, mix: 30 }, reverb: { engaged: true, name: "Hall", decay: 45, mix: 25 } }
         }
     },
     {
@@ -134,7 +134,7 @@ export const famousTones = [
         settings: {
             capture: "c10", ir: "ir4",
             knobs: { gain: 6, bass: 5.5, mid: 7.5, treble: 6, amount: 6, level: 7 },
-            effects: { overdrive: { engaged: true, name: "Green 808", drive: 50, tone: 65, level: 60 }, reverb: { engaged: true, name: "Spring Reverb", decay: 40, mix: 20 } }
+            effects: { overdrive: { engaged: true, name: "Green 808", drive: 50, tone: 65, level: 60 }, reverb: { engaged: true, name: "Room", decay: 40, mix: 20 } }
         }
     },
     {
@@ -218,7 +218,7 @@ export const famousTones = [
         settings: {
             capture: "c15", ir: "ir1",
             knobs: { gain: 7.5, bass: 5, mid: 6, treble: 7.5, amount: 6, level: 7 },
-            effects: { overdrive: { engaged: true, name: "Obsessive Drive", drive: 75, tone: 60, level: 60 }, reverb: { engaged: true, name: "Spring Reverb", decay: 40, mix: 20 } }
+            effects: { overdrive: { engaged: true, name: "Obsessive Drive", drive: 75, tone: 60, level: 60 }, reverb: { engaged: true, name: "Room", decay: 40, mix: 20 } }
         }
     },
     {
@@ -227,7 +227,7 @@ export const famousTones = [
         settings: {
             capture: "c19", ir: "ir4",
             knobs: { gain: 4, bass: 5.5, mid: 6.5, treble: 6.5, amount: 4, level: 7 },
-            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 40, level: 45 }, reverb: { engaged: true, name: "Plate Reverb", decay: 50, mix: 25 } }
+            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 40, level: 45 }, reverb: { engaged: true, name: "Hall", decay: 50, mix: 25 } }
         }
     },
     {
@@ -254,7 +254,7 @@ export const famousTones = [
         settings: {
             capture: "c18", ir: "ir2",
             knobs: { gain: 4.5, bass: 5, mid: 5.5, treble: 7.5, amount: 5, level: 7 },
-            effects: { chorus: { engaged: true, name: "MX Vibes", depth: 45, rate: 35 }, reverb: { engaged: true, name: "Spring Reverb", decay: 60, mix: 35 } }
+            effects: { chorus: { engaged: true, name: "MX Vibes", depth: 45, rate: 35 }, reverb: { engaged: true, name: "Room", decay: 60, mix: 35 } }
         }
     },
     {
@@ -263,7 +263,7 @@ export const famousTones = [
         settings: {
             capture: "c18", ir: "ir2",
             knobs: { gain: 2.5, bass: 5, mid: 6, treble: 8.5, amount: 3, level: 8 },
-            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 70, level: 60 }, reverb: { engaged: true, name: "Spring Reverb", decay: 35, mix: 20 } }
+            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 70, level: 60 }, reverb: { engaged: true, name: "Room", decay: 35, mix: 20 } }
         }
     },
     {
@@ -272,7 +272,7 @@ export const famousTones = [
         settings: {
             capture: "c19", ir: "ir4",
             knobs: { gain: 4, bass: 5, mid: 7, treble: 8, amount: 4, level: 8 },
-            effects: { reverb: { engaged: true, name: "Spring Reverb", decay: 45, mix: 30 } }
+            effects: { reverb: { engaged: true, name: "Room", decay: 45, mix: 30 } }
         }
     },
     {
@@ -290,7 +290,7 @@ export const famousTones = [
         settings: {
             capture: "c4", ir: "ir1",
             knobs: { gain: 6, bass: 6, mid: 6, treble: 6.5, amount: 7, level: 7 },
-            effects: { reverb: { engaged: true, name: "Plate Reverb", decay: 20, mix: 10 } }
+            effects: { reverb: { engaged: true, name: "Hall", decay: 20, mix: 10 } }
         }
     },
     {
@@ -317,7 +317,7 @@ export const famousTones = [
         settings: {
             capture: "c18", ir: "ir2",
             knobs: { gain: 3.5, bass: 4.5, mid: 5.5, treble: 8, amount: 3, level: 8 },
-            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 30, level: 50 }, reverb: { engaged: true, name: "Spring Reverb", decay: 60, mix: 35 } }
+            effects: { compressor: { engaged: true, name: "Legendary 87", sustain: 30, level: 50 }, reverb: { engaged: true, name: "Room", decay: 60, mix: 35 } }
         }
     },
     {
@@ -389,7 +389,7 @@ export const famousTones = [
         settings: {
             capture: "c4", ir: "ir1", // Jubilee can do a decent violin tone
             knobs: { gain: 6.5, bass: 6, mid: 7.5, treble: 4.5, amount: 7, level: 6 },
-            effects: { overdrive: { engaged: true, name: "Green 808", drive: 25, tone: 40, level: 70 }, delay: { engaged: true, name: "Tape Delay", time: 42, feedback: 40, mix: 35 }, reverb: { engaged: true, name: "Plate Reverb", decay: 65, mix: 30 } }
+            effects: { overdrive: { engaged: true, name: "Green 808", drive: 25, tone: 40, level: 70 }, delay: { engaged: true, name: "Tape Delay", time: 42, feedback: 40, mix: 35 }, reverb: { engaged: true, name: "Hall", decay: 65, mix: 30 } }
         }
     },
     {

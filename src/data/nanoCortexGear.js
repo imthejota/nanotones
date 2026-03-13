@@ -62,8 +62,8 @@ export const nanoCortexGear = {
             { id: "po6", name: "Tape Delay", type: "Delay", description: "Vintage Tape Echo emulation", imageUrl: "/gear/po6.jpg" },
             { id: "po7", name: "Digital Delay", type: "Delay", description: "Pristine digital repeats", imageUrl: "/gear/po7.jpg" },
             { id: "po8", name: "Mind Hall", type: "Reverb", description: "Expansive hall reverb", imageUrl: "/gear/po8.jpg" },
-            { id: "po9", name: "Spring Reverb", type: "Reverb", description: "Classic amp-style spring tank", imageUrl: "/gear/po9.jpg" },
-            { id: "po10", name: "Plate Reverb", type: "Reverb", description: "Smooth studio plate reverb", imageUrl: "/gear/po10.jpg" }
+            { id: "po9", name: "Room", type: "Reverb", description: "Natural sounding room reverb", imageUrl: "/gear/po9.jpg" },
+            { id: "po10", name: "Hall", type: "Reverb", description: "Classic concert hall reverberation", imageUrl: "/gear/po10.jpg" }
         ]
     }
 };
