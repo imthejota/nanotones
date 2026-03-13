@@ -11,13 +11,19 @@ const Layout = () => {
                 <nav className="nav-links">
                     <Link to="/explorer">Gear Explorer</Link>
                     <Link to="/tones">Famous Tones</Link>
+                    <a href="https://www.patreon.com/cw/BeardGuitar" target="_blank" rel="noopener noreferrer" className="support-badge">Support</a>
                 </nav>
             </header>
             <main className="main-content">
                 <Outlet />
             </main>
             <footer className="footer">
-                <p>NanoTones - Unofficial Neural DSP Nano Cortex Knowledge Base</p>
+                <div className="footer-content">
+                    <p>NanoTones - Unofficial Neural DSP Nano Cortex Knowledge Base</p>
+                    <p className="patreon-mention">
+                        Help me keep growing and inventing! <a href="https://www.patreon.com/cw/BeardGuitar" target="_blank" rel="noopener noreferrer" className="patreon-link">Support on Patreon</a>
+                    </p>
+                </div>
             </footer>
         </div>
     );

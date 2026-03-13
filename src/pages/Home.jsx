@@ -25,18 +25,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="hero-visual">
-                    {/* Abstract representation of the pedal */}
-                    <div className="abstract-pedal">
-                        <div className="footswitch left"></div>
-                        <div className="footswitch right"></div>
-                        <div className="knob-row">
-                            <div className="knob"></div>
-                            <div className="knob"></div>
-                            <div className="knob"></div>
-                            <div className="knob"></div>
-                        </div>
-                        <div className="led-ring"></div>
-                    </div>
+                    <img src="/nanocortex-hero.png" alt="Neural DSP Nano Cortex" className="hero-image" />
                 </div>
             </div>
 
@@ -55,6 +44,13 @@ const Home = () => {
                         <p>Step-by-step presets to replicate iconic guitar sounds from legendary artists directly on your Nano Cortex.</p>
                     </Card>
                 </Link>
+                <a href="https://www.patreon.com/cw/BeardGuitar" target="_blank" rel="noopener noreferrer" className="support-link-card">
+                    <Card className="feature-card support-card">
+                        <div className="feature-icon icon-orange"></div>
+                        <h3>Support the Project</h3>
+                        <p>Help me keep growing and inventing! Grab a membership on Patreon to support the future of NanoTones.</p>
+                    </Card>
+                </a>
             </div>
         </div>
     );
