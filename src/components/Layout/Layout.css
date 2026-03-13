@@ -176,3 +176,32 @@
 .support-badge:hover::after {
     display: none;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 40px 20px 30px;
+    }
+
+    .patreon-mention {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

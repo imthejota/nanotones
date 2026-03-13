@@ -161,17 +161,40 @@
 }
 
 @media (max-width: 900px) {
+    .home-container {
+        gap: 50px;
+    }
+
     .hero-section {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
     }
 
     .hero-cta {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .hero-title {
         font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
     }
 }
 
