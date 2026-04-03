@@ -104,7 +104,7 @@
     height: 150px;
     background-color: var(--surface-light);
     border-radius: 8px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;

@@ -77,8 +77,9 @@
     height: 160px;
     border-radius: var(--border-radius-sm);
     margin-bottom: 20px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
