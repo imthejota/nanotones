@@ -409,5 +409,95 @@ export const famousTones = [
             knobs: { gain: 3.5, bass: 4.5, mid: 5, treble: 9, amount: 4, level: 8 },
             effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 50, level: 60 }, delay: { engaged: true, name: "Analog Delay", time: 12, feedback: 10, mix: 40 } } // Slapback delay
         }
+    },
+    {
+        id: "t46", artist: "Steve Vai", song: "Tender Surrender", genre: "Rock",
+        description: "Smooth, singing octave-fuzz infused neck pickup lead tone.",
+        settings: {
+            capture: "c15", ir: "ir1",
+            knobs: { gain: 5, bass: 6, mid: 7, treble: 6.5, amount: 6, level: 7 },
+            effects: { overdrive: { engaged: true, name: "Green 808", drive: 40, tone: 50, level: 70 }, delay: { engaged: true, name: "Digital Delay", time: 45, feedback: 30, mix: 25 }, reverb: { engaged: true, name: "Hall", decay: 50, mix: 30 } }
+        }
+    },
+    {
+        id: "t47", artist: "Steve Vai", song: "Bad Horsie", genre: "Metal",
+        description: "Heavy, dropped-tuning aggressive rhythm with a tight gate and Wah.",
+        settings: {
+            capture: "c3", ir: "ir3",
+            knobs: { gain: 8.5, bass: 7, mid: 7.5, treble: 8, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, wah: { engaged: true, name: "Bubba Wah", position: 40 }, overdrive: { engaged: true, name: "Obsessive Drive", drive: 20, tone: 60, level: 80 } }
+        }
+    },
+    {
+        id: "t48", artist: "Joe Satriani", song: "Surfing with the Alien", genre: "Rock",
+        description: "Singing, sustaining legato lead tone with delay.",
+        settings: {
+            capture: "c4", ir: "ir1",
+            knobs: { gain: 7.5, bass: 5, mid: 8, treble: 6, amount: 7, level: 6 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 30, tone: 50, level: 80 }, delay: { engaged: true, name: "Digital Delay", time: 35, feedback: 35, mix: 30 }, reverb: { engaged: true, name: "Hall", decay: 40, mix: 20 } }
+        }
+    },
+    {
+        id: "t49", artist: "Joe Satriani", song: "Always With Me, Always With You", genre: "Rock",
+        description: "Fluid, highly melodic crunch lead tone.",
+        settings: {
+            capture: "c2", ir: "ir1",
+            knobs: { gain: 6, bass: 5.5, mid: 7, treble: 6.5, amount: 6, level: 7 },
+            effects: { chorus: { engaged: true, name: "Chief CE2W", depth: 40, rate: 20 }, delay: { engaged: true, name: "Tape Delay", time: 40, feedback: 30, mix: 25 }, reverb: { engaged: true, name: "Mind Hall", decay: 45, mix: 25 } }
+        }
+    },
+    {
+        id: "t50", artist: "Yngwie Malmsteen", song: "Black Star", genre: "Metal",
+        description: "Neo-classical shred tone. Pushed vintage stack with fierce overdrive.",
+        settings: {
+            capture: "c20", ir: "ir1", // Using driven Hiwatt or Marshall
+            knobs: { gain: 7, bass: 4.5, mid: 8.5, treble: 8, amount: 7, level: 7 },
+            effects: { gate: { engaged: true, name: "Utility Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 60, tone: 70, level: 80 }, delay: { engaged: true, name: "Analog Delay", time: 20, feedback: 15, mix: 15 } }
+        }
+    },
+    {
+        id: "t51", artist: "Yngwie Malmsteen", song: "Far Beyond the Sun", genre: "Metal",
+        description: "Aggressive, biting lead tone suitable for high-speed picking.",
+        settings: {
+            capture: "c5", ir: "ir1",
+            knobs: { gain: 7.5, bass: 5, mid: 9, treble: 8.5, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Obsessive Drive", drive: 40, tone: 80, level: 85 }, reverb: { engaged: true, name: "Room", decay: 30, mix: 15 } }
+        }
+    },
+    {
+        id: "t52", artist: "David Gilmour", song: "Comfortably Numb (Solo 2)", genre: "Rock",
+        description: "Massive, sustaining epic fuzz/drive tone bathed in delay.",
+        settings: {
+            capture: "c19", ir: "ir1",
+            knobs: { gain: 4, bass: 6, mid: 7.5, treble: 6.5, amount: 4, level: 6 },
+            effects: { overdrive: { engaged: true, name: "Rodent Drive", drive: 75, tone: 60, level: 70 }, chorus: { engaged: true, name: "MX Flanger", depth: 15, rate: 10 }, delay: { engaged: true, name: "Analog Delay", time: 48, feedback: 40, mix: 35 }, reverb: { engaged: true, name: "Hall", decay: 50, mix: 25 } }
+        }
+    },
+    {
+        id: "t53", artist: "David Gilmour", song: "Run Like Hell", genre: "Rock",
+        description: "Punchy, rhythmic clean tone layered with precise dotted-eighth delay and flange.",
+        settings: {
+            capture: "c19", ir: "ir4",
+            knobs: { gain: 3.5, bass: 5.5, mid: 6, treble: 8, amount: 3, level: 8 },
+            effects: { compressor: { engaged: true, name: "Solid State Comp", sustain: 50, level: 60 }, chorus: { engaged: true, name: "MX Flanger", depth: 55, rate: 25 }, delay: { engaged: true, name: "Digital Delay", time: 38, feedback: 40, mix: 45 } }
+        }
+    },
+    {
+        id: "t54", artist: "Walter Giardino", song: "Mujer Amante", genre: "Metal",
+        description: "Smooth neo-classical hard rock lead, very liquid and melodic.",
+        settings: {
+            capture: "c4", ir: "ir1",
+            knobs: { gain: 7.5, bass: 5.5, mid: 8.5, treble: 7.5, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 30, tone: 60, level: 80 }, delay: { engaged: true, name: "Tape Delay", time: 40, feedback: 30, mix: 25 }, reverb: { engaged: true, name: "Hall", decay: 45, mix: 25 } }
+        }
+    },
+    {
+        id: "t55", artist: "Walter Giardino", song: "La Leyenda del Hada y el Mago", genre: "Metal",
+        description: "High energy, fast-paced heavy metal riff and shred tone.",
+        settings: {
+            capture: "c20", ir: "ir3",
+            knobs: { gain: 8, bass: 6, mid: 7.5, treble: 8.5, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Obsessive Drive", drive: 40, tone: 70, level: 80 }, delay: { engaged: true, name: "Digital Delay", time: 30, feedback: 20, mix: 20 } }
+        }
     }
 ];

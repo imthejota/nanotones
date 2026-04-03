@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import Card from '../components/Card/Card';
 import Badge from '../components/Badge/Badge';
-import { nanoCortexGear } from '../data/nanoCortexGear';
+import { useGearOverrides } from '../hooks/useGearOverrides';
 import './GearExplorer.css';
 
 const GearExplorer = () => {
     const [activeTab, setActiveTab] = useState('captures');
+    const gearData = useGearOverrides();
 
     const renderCaptures = () => (
         <div className="gear-grid">
-            {nanoCortexGear.captures.map(item => (
+            {gearData.captures.map(item => (
                 <Card key={item.id} className="gear-card">
                     {item.imageUrl && <div className="gear-image" style={{ backgroundImage: `url(${item.imageUrl})` }}></div>}
                     <div className="gear-header">
@@ -34,7 +35,7 @@ const GearExplorer = () => {
 
     const renderIRs = () => (
         <div className="gear-grid">
-            {nanoCortexGear.irs.map(item => (
+            {gearData.irs.map(item => (
                 <Card key={item.id} className="gear-card">
                     {item.imageUrl && <div className="gear-image" style={{ backgroundImage: `url(${item.imageUrl})` }}></div>}
                     <div className="gear-header">
@@ -52,7 +53,7 @@ const GearExplorer = () => {
     );
 
     const renderEffects = () => {
-        const allEffects = [...nanoCortexGear.effects.pre, ...nanoCortexGear.effects.post];
+        const allEffects = [...gearData.effects.pre, ...gearData.effects.post];
 
         return (
             <div className="gear-grid">
@@ -66,7 +67,7 @@ const GearExplorer = () => {
                         <p className="gear-desc">{item.description}</p>
                         <div className="gear-metadata">
                             <span className="meta-label">Position:</span>
-                            {nanoCortexGear.effects.pre.find(e => e.id === item.id) ? 'Pre-FX' : 'Post-FX'}
+                            {gearData.effects.pre.find(e => e.id === item.id) ? 'Pre-FX' : 'Post-FX'}
                         </div>
                     </Card>
                 ))}
@@ -86,13 +87,13 @@ const GearExplorer = () => {
                     className={`tab-btn ${activeTab === 'captures' ? 'active' : ''}`}
                     onClick={() => setActiveTab('captures')}
                 >
-                    Captures ({nanoCortexGear.captures.length})
+                    Captures ({gearData.captures.length})
                 </button>
                 <button
                     className={`tab-btn ${activeTab === 'irs' ? 'active' : ''}`}
                     onClick={() => setActiveTab('irs')}
                 >
-                    Factory IRs ({nanoCortexGear.irs.length})
+                    Factory IRs ({gearData.irs.length})
                 </button>
                 <button
                     className={`tab-btn ${activeTab === 'effects' ? 'active' : ''}`}

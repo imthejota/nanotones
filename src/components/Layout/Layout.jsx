@@ -23,6 +23,9 @@ const Layout = () => {
                     <p className="patreon-mention">
                         Help me keep growing and inventing! <a href="https://www.patreon.com/cw/BeardGuitar/membership" target="_blank" rel="noopener noreferrer" className="patreon-link">Support on Patreon</a>
                     </p>
+                    <p style={{ marginTop: '10px', fontSize: '0.8rem' }}>
+                        <Link to="/admin" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Super Admin Settings</Link>
+                    </p>
                 </div>
             </footer>
         </div>

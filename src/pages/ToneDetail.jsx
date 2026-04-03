@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { famousTones } from '../data/famousTones';
-import { nanoCortexGear } from '../data/nanoCortexGear';
+import { useGearOverrides } from '../hooks/useGearOverrides';
 import Badge from '../components/Badge/Badge';
 import './ToneDetail.css';
 
@@ -43,9 +43,11 @@ const ToneDetail = () => {
         );
     }
 
+    const gearData = useGearOverrides();
+
     // Look up actual capture and IR info
-    const capture = nanoCortexGear.captures.find(c => c.id === tone.settings.capture);
-    const ir = nanoCortexGear.irs.find(i => i.id === tone.settings.ir);
+    const capture = gearData.captures.find(c => c.id === tone.settings.capture);
+    const ir = gearData.irs.find(i => i.id === tone.settings.ir);
 
     return (
         <div className="page-container tone-detail-page">
