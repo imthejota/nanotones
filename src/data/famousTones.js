@@ -499,5 +499,41 @@ export const famousTones = [
             knobs: { gain: 8, bass: 6, mid: 7.5, treble: 8.5, amount: 8, level: 7 },
             effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Obsessive Drive", drive: 40, tone: 70, level: 80 }, delay: { engaged: true, name: "Digital Delay", time: 30, feedback: 20, mix: 20 } }
         }
+    },
+    {
+        id: "t56", artist: "Paul Gilbert", song: "Scarified (Racer X)", genre: "Metal",
+        description: "Classic 80s shred. Tight, fast-picking distortion with pronounced mids.",
+        settings: {
+            capture: "c5", ir: "ir1", // Pushed Marshall Silver Jubilee Rhythm
+            knobs: { gain: 8, bass: 5, mid: 8.5, treble: 7.5, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, overdrive: { engaged: true, name: "Obsessive Drive", drive: 40, tone: 70, level: 80 }, delay: { engaged: false, name: "Digital Delay", time: 30, feedback: 20, mix: 0 } }
+        }
+    },
+    {
+        id: "t57", artist: "Paul Gilbert", song: "Technical Difficulties (Racer X)", genre: "Metal",
+        description: "Aggressive, ultra-tight high-gain attack for precise alternate picking.",
+        settings: {
+            capture: "c16", ir: "ir3", // Peavey 5150 signature + V30s
+            knobs: { gain: 7.5, bass: 6, mid: 8, treble: 7.5, amount: 8, level: 7 },
+            effects: { gate: { engaged: true, name: "Utility Gate" }, overdrive: { engaged: true, name: "Green 808", drive: 20, tone: 80, level: 90 }, reverb: { engaged: true, name: "Room", decay: 20, mix: 15 } }
+        }
+    },
+    {
+        id: "t58", artist: "Paul Gilbert", song: "Get Out of My Yard", genre: "Rock",
+        description: "Modern instrumental shred rock tone, clear and articulate.",
+        settings: {
+            capture: "c4", ir: "ir1", // Marshall Silver Jubilee Lead
+            knobs: { gain: 7, bass: 6, mid: 7, treble: 6.5, amount: 7, level: 7 },
+            effects: { gate: { engaged: true, name: "Adaptive Gate" }, delay: { engaged: true, name: "Analog Delay", time: 35, feedback: 25, mix: 20 }, reverb: { engaged: true, name: "Room", decay: 30, mix: 20 } }
+        }
+    },
+    {
+        id: "t59", artist: "Paul Gilbert", song: "Down to Mexico", genre: "Rock",
+        description: "Funky, bluesy hard rock crunch with a heavy dose of flanger on the rhythm.",
+        settings: {
+            capture: "c18", ir: "ir2", // Fender Princeton, pushed hard
+            knobs: { gain: 6.5, bass: 5, mid: 7.5, treble: 8, amount: 6, level: 8 },
+            effects: { overdrive: { engaged: true, name: "Green 808", drive: 50, tone: 60, level: 70 }, chorus: { engaged: true, name: "MX Flanger", depth: 60, rate: 45 }, reverb: { engaged: true, name: "Room", decay: 40, mix: 25 } }
+        }
     }
 ];
